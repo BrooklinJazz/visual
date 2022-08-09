@@ -19,7 +19,7 @@ Mix.install([{:kino, "~> 0.6.2"}, {:visual, github: "BrooklinJazz/visual"}])
 
 Double click the title to edit the visual.
 
-Change `false` to `true` to see the lightbulb turn on.
+Change `false` to `true` and re-evaluate the cell to see the lightbulb turn on.
 
 <!-- livebook:{"attrs":{"code":"power = false","source":"content = if power, do: \"/images/on.png\", else: \"/images/off.png\"\nKino.Image.new(File.read!(__DIR__ <> content), :png)","title":"Powered Visual"},"kind":"Elixir.Visual","livebook_object":"smart_cell"} -->
 
