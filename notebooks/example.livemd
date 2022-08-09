@@ -1,0 +1,30 @@
+# Example
+
+```elixir
+Mix.install([{:kino, "~> 0.6.2"}, {:visual, path: "."}])
+```
+
+## Installation
+
+`Visual` depends on the [Kino](https://github.com/livebook-dev/kino) project.
+Use `Mix.install/2` to install `Visual` and `Kino` in the setup section of your livebook.
+
+<!-- livebook:{"force_markdown":true} -->
+
+```elixir
+Mix.install([{:kino, "~> 0.6.2"}, {:visual, github: "BrooklinJazz/visual"}])
+```
+
+## Usage
+
+Double click the title to edit the visual.
+
+Change `false` to `true` to see the lightbulb turn on.
+
+<!-- livebook:{"attrs":{"code":"power = false","source":"content = if power, do: \"/images/on.png\", else: \"/images/off.png\"\nKino.Image.new(File.read!(__DIR__ <> content), :png)","title":"Powered Visual"},"kind":"Elixir.Visual","livebook_object":"smart_cell"} -->
+
+```elixir
+power = false
+content = if power, do: "/images/on.png", else: "/images/off.png"
+Kino.Image.new(File.read!(__DIR__ <> content), :png)
+```
