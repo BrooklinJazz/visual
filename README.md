@@ -1,18 +1,13 @@
 # Visual
 
-**TODO: Add description**
+**A visual feedback Kino Smart Cell for Livebook**
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `visual` to your list of dependencies in `mix.exs`:
+Add the dependency in your Livebook setup section. This project relies on [Kino](https://github.com/livebook-dev/kino).
 
 ```elixir
-def deps do
-  [
-    {:visual, "~> 0.1.0"}
-  ]
-end
+Mix.install([{:kino, "~> 0.6.2"}, {:visual, github: "BrooklinJazz/visual"}])
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
